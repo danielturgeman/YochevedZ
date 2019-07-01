@@ -10,8 +10,6 @@
 * [License](#license)
 * [Contact](#contact)
 
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
@@ -45,24 +43,14 @@ Follow the instructions [here](https://ionicframework.com/docs/intro/installatio
 * ionic-cli
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
 ```sh
-git clone https:://github.com/your_username_/Project-Name.git
+git clone https://github.com/danielturgeman/YochevedZ.git
 ```
-3. Install NPM packages
-```sh
-npm install
-```
-4. Enter your API in `config.js`
-```JS
-const API_KEY = 'ENTER YOUR API';
-```
+2. Run ```ionic serve```
 
 <!-- CONTRIBUTING -->
 ## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
