@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Github Repository List Application
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-list inset>
+        <ion-item>
+            <ion-label>Username</ion-label>
+            <ion-input required [(ngModel)]="username" type="text"></ion-input>
+        </ion-item>
+    </ion-list>
+    <div padding>
+        <button ion-button block (click)="getUserRepos()">Search</button>
+    </div>
+    <div padding *ngIf="error">
+        <ion-card color="danger">
+          <ion-card-header>
+              <h2> Error Status: {{ error.status }} </h2>
+          </ion-card-header>
+          <ion-card-content>
+              <h2> Username {{ error.statusText }}</h2>
+          </ion-card-content>
+        </ion-card>
+
+    </div>
+    <div padding *ngIf="foundRepos">
+      <span>Total Repository Count: <strong>{{ reposCount }}</strong></span>
+      <button ion-button block color="danger" (click)="clearUserRepos()">Clear List</button>
+    </div>
+    <ion-card *ngFor="let repo of foundRepos" (click)="goToRepoDetailsPage(repo)">
+        <ion-card-header>
+            {{ repo.name }}
+        </ion-card-header>
+        <ion-card-content>
+            {{ repo.description }}
+        </ion-card-content>
+      </ion-card>
+    </ion-content>
