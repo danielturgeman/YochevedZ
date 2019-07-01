@@ -23,7 +23,7 @@ Features:
 
 ### Built With.
 
--NOTE: Make sure you are using Ionic version 2 and Angular 2.
+NOTE: This project runs on Ionic2 and Angular2
 
 * [Ionic](https://ionicframework.com/)
 * [TypeScript](https://www.typescriptlang.org/)
