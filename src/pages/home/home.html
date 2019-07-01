@@ -28,7 +28,7 @@
 
     </div>
     <div padding *ngIf="foundRepos">
-      <span>Total Repository Count: <strong>{{ reposCount }}</strong></span>
+      <span>Total Repository Count: <strong>{{ reposCount }} / 30</strong></span>
       <button ion-button block color="danger" (click)="clearUserRepos()">Clear List</button>
     </div>
     <ion-card *ngFor="let repo of foundRepos" (click)="goToRepoDetailsPage(repo)">
