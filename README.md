@@ -22,6 +22,9 @@ Features:
 * Introductory Slide for app
 
 ### Built With.
+
+-NOTE: Make sure you are using Ionic version 2 and Angular 2.
+
 * [Ionic](https://ionicframework.com/)
 * [TypeScript](https://www.typescriptlang.org/)
 * [Atom](https://atom.io)
@@ -47,7 +50,8 @@ Follow the instructions [here](https://ionicframework.com/docs/intro/installatio
 ```sh
 git clone https://github.com/danielturgeman/YochevedZ.git
 ```
-2. Run ```ionic serve```
+2. Run ```npm install```
+3. Run ```ionic serve```
 
 <!-- CONTRIBUTING -->
 ## Contributing
